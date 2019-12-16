@@ -212,7 +212,7 @@ async function androidSetupApplicationFirebase() {
 			}
 
 			if (!data.includes('com.google.gms.google-services')) {
-				var modifiedBuildGradle = data + "\napply plugin: 'com.google.gms.google-services'";
+				var modifiedBuildGradle = data;
 				modifiedBuildGradle = modifiedBuildGradle.replace(
 					'    dependencies {',
 					"    dependencies { \n     classpath 'com.google.gms:google-services:4.2.0'"
