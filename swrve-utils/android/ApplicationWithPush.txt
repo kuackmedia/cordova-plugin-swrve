@@ -1,6 +1,6 @@
 // SWRVE CHANGES
 SwrveConfig config = new SwrveConfig();
-// config.setSelectedStack(SwrveStack.EU);
+config.setSelectedStack(SwrveStack.EU);
 
 NotificationChannel channel = null;
 if (android.os.Build.VERSION.SDK_INT >= android.os.Build.VERSION_CODES.O) {
