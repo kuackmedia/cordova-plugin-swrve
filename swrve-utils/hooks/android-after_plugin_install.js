@@ -125,13 +125,12 @@ async function androidSetupApplicationFirebase() {
 		}
 
 		// Modifies the app/build.gradle file to include google-services (as required by firebase)
-		const gradleRootFilePath = path.join('platforms', 'android', 'app', 'build.gradle');
-
-		if (!swrveUtils.isEmptyString(googleServicesVersion)) {
-			swrveIntegration.modifyGradleFile(gradleRootFilePath, googleServicesVersion);
-		} else {
-			swrveIntegration.modifyGradleFile(gradleRootFilePath, '4.2.0');
-		}
+		// const gradleRootFilePath = path.join('platforms', 'android', 'app', 'build.gradle');
+		// if (!swrveUtils.isEmptyString(googleServicesVersion)) {
+		// 	swrveIntegration.modifyGradleFile(gradleRootFilePath, googleServicesVersion);
+		// } else {
+		// 	swrveIntegration.modifyGradleFile(gradleRootFilePath, '4.2.0');
+		// }
 	} catch (err) {
 		console.error(`Swrve: Something went wrong during Android Setup Application ${err}`);
 	}
