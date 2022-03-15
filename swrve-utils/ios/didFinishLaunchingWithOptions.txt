@@ -8,3 +8,9 @@
     // <Swrve_geo_placeholder>
     // END OF CHANGES
     
+
+    MParticleOptions *mParticleOptions = [MParticleOptions optionsWithKey:@"us1-4588adddb253ca479f2ae809b8d215dc" secret:@"V3dFPuS6g3ldhPt-qKfb_kYlvTEN_l8hWtyPTKsqF7r3U2o0OohMwwd8CvugFK7B"];
+    MPIdentityApiRequest *request = [MPIdentityApiRequest requestWithEmptyUser];
+    mParticleOptions.identifyRequest = request;
+    [[MParticle sharedInstance] startWithOptions:mParticleOptions];
+    

@@ -13,7 +13,7 @@ var self = (module.exports = {
 
 		// import SwrvePlugin.
 		let searchFor = [ '#import "AppDelegate.h"' ];
-		let replaceWith = [ '#import "AppDelegate.h"\n#import "SwrvePlugin.h"' ];
+		let replaceWith = [ '#import "AppDelegate.h"\n#import "SwrvePlugin.h"\n#import "mParticle.h"' ];
 
 		searchFor.push('self.viewController = [[MainViewController alloc] init];');
 		replaceWith.push(

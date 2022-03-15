@@ -16,3 +16,9 @@
       SwrvePlugin.createInstance(this, <SwrveAppId>, "<SwrveKey>", config);
       // END OF CHANGES
       
+      IdentityApiRequest identifyRequest = IdentityApiRequest.withEmptyUser().build();
+      MParticleOptions options = MParticleOptions.builder(this)
+              .credentials("us1-6d1780430b02be4a880e0fb36ee6499a","yP8ngupOzttClg4EKbdpZNSp14ExNTlsskkqwtl4eeBcE9GYnvX8c57ZzUaXhczQ")
+              .identify(identifyRequest)
+              .build();
+      MParticle.start(options);
