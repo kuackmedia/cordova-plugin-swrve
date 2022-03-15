@@ -21,6 +21,7 @@
 
   	<source-file src="platforms/android/src/com/swrve/SwrvePlugin.java" target-dir="src/com/swrve/" />
   	<framework src="platforms/android/build.gradle" custom="true" type="gradleReference" />
+    <framework src="com.mparticle:android-adjust-kit:5+"/>
 
     <config-file target="AndroidManifest.xml" parent="/manifest">
       <uses-permission android:name="android.permission.INTERNET"/>
@@ -47,5 +48,6 @@
     <framework src="platforms/ios/Frameworks/SwrveSDKCommon.framework" custom="true" embed="true"/>
     <framework src="platforms/ios/Frameworks/SwrveConversationSDK.framework" custom="true" embed="true"/>
     <framework src="platforms/ios/Frameworks/SwrveSDK.framework" custom="true" embed="true"/>
+    <framework src="mParticle-Adjust" type="podspec" spec="~> 8.0"/>
   </platform>
 </plugin>
